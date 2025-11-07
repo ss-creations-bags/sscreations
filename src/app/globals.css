@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* 
+  Use RGB values (not hex) for colors if you want Tailwind opacity modifiers 
+  like bg-custom-background/90 to work properly.
+*/
+:root {
+  /* Light mode colors */
+  --background: 255 255 255;       /* #ffffff */
+  --foreground: 23 23 23;          /* #171717 */
+  
+  /* High-end Indian Fashion Palette */
+  --primary: 107 31 61;            /* #6B1F3D - Burgundy */
+  --secondary: 184 134 11;         /* #B8860B - Dark Gold */
+  --secondary-light: 234 209 81;   /* #EAD151 - Light Gold */
+  --accent: 229 212 193;           /* #E5D4C1 - Beige */
+  --custom-background: 255 254 249; /* #FFFEF9 - Warm Ivory */
+  --custom-background-dark: 245 243 237; /* #F5F3ED - Warm Ivory Darkened */
+}
+
+@theme inline {
+  --color-background: rgb(var(--background));
+  --color-foreground: rgb(var(--foreground));
+  
+  /* Custom theme colors with RGB support */
+  --color-primary: rgb(var(--primary));
+  --color-secondary: rgb(var(--secondary));
+  --color-secondary-light: rgb(var(--secondary-light));
+  --color-accent: rgb(var(--accent));
+  --color-custom-background: rgb(var(--custom-background));
+  --color-custom-background-dark: rgb(var(--custom-background-dark));
+}
+
+/* Cormorant Font Utilities */
+.cormorant-300, .cormorant-400, .cormorant-500,
+.cormorant-600, .cormorant-700 {
+  font-family: "Cormorant", serif;
+  font-optical-sizing: auto;
+}
+
+.cormorant-300 { font-weight: 300; }
+.cormorant-400 { font-weight: 400; }
+.cormorant-500 { font-weight: 500; }
+.cormorant-600 { font-weight: 600; }
+.cormorant-700 { font-weight: 700; }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: 10 10 10;  /* #0a0a0a */
+    --foreground: 237 237 237; /* #ededed */
+  }
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  font-family: Arial, Helvetica, sans-serif;
+}

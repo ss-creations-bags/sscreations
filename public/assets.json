@@ -1,0 +1,502 @@
+{
+  "categories": [
+    {
+      "id": "nonwovencommonbags",
+      "name": "Non-Woven Common Bags",
+      "products": [
+        {
+          "title": "Blue Bag",
+          "image": "images/bags/exampleblue.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Pink Bag",
+          "image": "images/bags/examplepink.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Metallic Gold",
+          "image": "images/bags/metallicgold.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Orange Bag",
+          "image": "images/bags/exampleorange.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Orange Bag",
+          "image": "images/bags/exampleorange(1).jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*44"
+        },
+        {
+          "title": "Solid Grey Box Bag",
+          "image": "images/bags/solidgreyboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "33*44"
+        },
+        {
+          "title": "Two Sisters Bag",
+          "image": "images/bags/twosisters.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "33*44"
+        },
+        {
+          "title": "Checked Bag",
+          "image": "images/bags/blackandhwhitechecked.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Rose Big",
+          "image": "images/bags/rosebig.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Maroon Box Bag",
+          "image": "images/bags/maroonboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Golden Leaf Bag",
+          "image": "images/bags/goldenleaf.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Flower Bag",
+          "image": "images/bags/flowerbag.png",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*34"
+        },
+        {
+          "title": "Indian Design Bag Red",
+          "image": "images/bags/indiandesignred.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*36"
+        },
+        {
+          "title": "Indian Design Bag Blue",
+          "image": "images/bags/indiandesignblue.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*36"
+        },
+        {
+          "title": "Indian Design Bag Green",
+          "image": "images/bags/indiandesigngreen.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "35.5*36"
+        },
+        {
+          "title": "Rose Small Bag",
+          "image": "images/bags/rosesmall.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Jali Design Black",
+          "image": "images/bags/jalidesignblack.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "14*13*5"
+        },
+        {
+          "title": "Rangoli Design Bag",
+          "image": "images/bags/rangolidesign.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Jali Design White",
+          "image": "images/bags/jalidesignwhite.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "14*13*6"
+        },
+        {
+          "title": "Butterfly Bag",
+          "image": "images/bags/butterflybag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Red Bag",
+          "image": "images/bags/examplered.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Multi Colorflower Bag",
+          "image": "images/bags/multicolorflowerbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Basant Panchami Bag",
+          "image": "images/bags/basantpanchami.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Purple Box Bag",
+          "image": "images/bags/purpleboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Red Box Bag",
+          "image": "images/bags/redboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Golden Box Bag",
+          "image": "images/bags/goldenboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Black Box Bag",
+          "image": "images/bags/blackboxbag.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "30.5*43"
+        },
+        {
+          "title": "Peacock Bag",
+          "image": "images/bags/peacock.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Golden Flower Bag Blue",
+          "image": "images/bags/goldenflowerblue.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Golden Flower Bag White",
+          "image": "images/bags/goldenflowerwhite.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Golden Flower Bag Red",
+          "image": "images/bags/goldenflowerred.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Golden Flower Bag Turquoise",
+          "image": "images/bags/goldenflowerturquoise.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Green Box Bag",
+          "image": "images/bags/examplegreen.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "16.5*10*5"
+        },
+        {
+          "title": "Multi Color Strip Bag",
+          "image": "images/bags/multicolorstrip.jpg",
+          "printing": "Rotogravure, Screen",
+          "dimensions": "39*32"
+        }
+      ]
+    },
+    {
+      "id": "bopplaminatedppwovenfabricboxbag",
+      "name": "BOPP Laminated PP Woven Fabric Box Bag",
+      "products": [
+        {
+          "title": "Super Texstyles Bag",
+          "image": "images/bags/supertexstyles.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*35"
+        },
+        {
+          "title": "Saree Bag",
+          "image": "images/bags/omjaisaree.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "38*25"
+        },
+        {
+          "title": "Utsav Raas Bag",
+          "image": "images/bags/utsavraas.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "15.5*18"
+        },
+        {
+          "title": "Non-Woven Bag",
+          "image": "images/bags/omprakashkailashchand.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Kasturi Bag",
+          "image": "images/bags/kasturi.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*35"
+        },
+        {
+          "title": "Non-Woven Bag",
+          "image": "images/bags/shrinay.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*35"
+        },
+        {
+          "title": "Balloons 76 Bag",
+          "image": "images/bags/balloon76.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "17*12*5"
+        },
+        {
+          "title": "Reid & Taylor Bag",
+          "image": "images/bags/raid_taylor.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "17*12*5"
+        },
+        {
+          "title": "Reemayur Purple Bag",
+          "image": "images/bags/reemayurpurple.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "17*12*5"
+        },
+        {
+          "title": "Aristea Bag",
+          "image": "images/bags/aristea.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Vashu Green Bag",
+          "image": "images/bags/vashugreen.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Rivoli Bag",
+          "image": "images/bags/rivoli.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "Unifire Bag",
+          "image": "images/bags/unifire.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "30.5*44"
+        },
+        {
+          "title": "Shivshankar Sarees Bag",
+          "image": "images/bags/shivshankar.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*33"
+        },
+        {
+          "title": "Reemayur Bag",
+          "image": "images/bags/reemayurlady.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*34"
+        },
+        {
+          "title": "Pansheel Handloom Bag",
+          "image": "images/bags/pansheelhandloom.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "35.5*34"
+        }
+      ]
+    },
+    {
+      "id": "nonwovenstitchedbags",
+      "name": "Non-Woven Stitched Bags",
+      "products": [
+        {
+          "title": "Shibaam Bag",
+          "image": "images/bags/shibaam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Babbi Bhai Bag",
+          "image": "images/bags/babbibhai.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "13*17*3"
+        },
+        {
+          "title": "Al Mazzam Bag",
+          "image": "images/bags/almazzam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Club 69 Bag",
+          "image": "images/bags/club69.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "12*8*3"
+        },
+        {
+          "title": "Sughanda Creations Bag",
+          "image": "images/bags/sareebag.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "38*25"
+        },
+        {
+          "title": "Indra Bhuti Bag",
+          "image": "images/bags/indra.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Fairy Land Bag",
+          "image": "images/bags/fairy.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Lehnga Bazaar Bag",
+          "image": "images/bags/lehengabag.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "38*25*7"
+        },
+        {
+          "title": "JMD Bag",
+          "image": "images/bags/jmd.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Sanskriti Bag",
+          "image": "images/bags/sanskriti.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Sangam Bag",
+          "image": "images/bags/sangam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Silver Point Jewellers Bag",
+          "image": "images/bags/silverpointjewellers.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "10*8*3"
+        },
+        {
+          "title": "SKA Bag",
+          "image": "images/bags/ska.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "10*8*3"
+        },
+        {
+          "title": "U Royal Style Bag",
+          "image": "images/bags/u.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "20*15*5"
+        }
+      ]
+    },
+    {
+      "id": "boppbag",
+      "name": "BOPP Bag",
+      "products": [
+        {
+          "title": "Paris BOPP Bag",
+          "image": "images/bags/boppbag.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "13*10"
+        },
+        {
+          "title": "Vee Leg BOPP Bag",
+          "image": "images/bags/veelegbopp.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "15.5*14"
+        },
+        {
+          "title": "Rebenik BOPP Bag",
+          "image": "images/bags/rebenikboppbag.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "15.5*14"
+        },
+        {
+          "title": "Italian Boy BOPP Bag",
+          "image": "images/bags/italianboy.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "15.6*14"
+        }
+      ]
+    },
+    {
+      "id": "zippouch",
+      "name": "Zip Pouch",
+      "products": [
+        {
+          "title": "Bodycare Zip pouch",
+          "image": "images/bags/zippouch.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "7*10"
+        },
+        {
+          "title": "Nagina Zip pouch",
+          "image": "images/bags/naginapouch.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "7*10"
+        },
+        {
+          "title": "Saar Education Zip pouch",
+          "image": "images/bags/smilepouch.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "8*10"
+        }
+      ]
+    },
+    {
+      "id": "ziplockbags",
+      "name": "Zip Lock Bags",
+      "products": [
+        {
+          "title": "White Ziplock Bag",
+          "image": "images/bags/whiteziplockbag.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "8*6.5"
+        },
+        {
+          "title": "Riya Ziplock Bag",
+          "image": "images/bags/ziplockbag.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "12*9.5"
+        },
+        {
+          "title": "Boss Oswal Ziplock Bag",
+          "image": "images/bags/bossziplockbag.jpg",
+          "printing": "Cylinder Printing",
+          "dimensions": "12.5*9.5"
+        }
+      ]
+    },
+    {
+      "id": "jutebags",
+      "name": "Jute Bags",
+      "products": [
+        {
+          "title": "Lavika Jute Bag",
+          "image": "images/bags/jutebags.jpg",
+          "printing": "Screen",
+          "dimensions": "24.5*23"
+        },
+        {
+          "title": "SB Jute Bag",
+          "image": "images/bags/sbjutebag.jpg",
+          "printing": "Screen",
+          "dimensions": "24.5*23"
+        }
+      ]
+    }
+  ]
+}
