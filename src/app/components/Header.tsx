@@ -39,9 +39,19 @@ export default function Header() {
           <div className="flex-1">
             <Link href="/" className="flex items-center gap-3">
               <span className="sr-only">Home</span>
-              <span className="cormorant-500 text-4xl text-primary">
+              {/* Commented out SS Creations text */}
+              {/* <span className="cormorant-500 text-4xl text-primary">
                 SS Creations
-              </span>
+              </span> */}
+              
+              {/* Added logo3.svg */}
+              <div className="h-12 w-48 md:h-14 md:w-56 flex items-center">
+                <img 
+                  src="/logo_head.svg" 
+                  alt="SS Creations" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
             </Link>
           </div>
 
@@ -85,12 +95,6 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                {/* <Link 
-                  href="/contact" 
-                  className="px-6 py-2 bg-primary text-custom-background font-medium tracking-wide transition hover:bg-secondary hover:text-primary rounded-sm"
-                >
-                  Connect
-                </Link> */}
                 <Link 
                   href="/contact" 
                   className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
