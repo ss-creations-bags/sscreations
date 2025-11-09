@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./Button"; // Adjust path as needed
 
 interface Product {
   title: string;
@@ -11,28 +12,25 @@ interface Product {
   dimensions: string;
 }
 
+interface Category {
+  id: string;
+  name: string;
+  products: Product[];
+}
+
 export default function FeaturedProducts() {
-  const [products, setProducts] = useState<(Product & { categoryId: string })[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch('/assets.json')
-      .then(response => response.json())
-      .then(data => {
-        // Get first 8 products from all categories
-        const allProducts = data.categories
-          .flatMap((cat: any) => 
-            cat.products.slice(0, 2).map((product: Product) => ({ 
-              ...product, 
-              categoryId: cat.id 
-            }))
-          )
-          .slice(0, 8);
-        setProducts(allProducts);
+    fetch("/assets.json")
+      .then((res) => res.json())
+      .then((data: { categories: Category[] }) => {
+        setCategories(data.categories.slice(0, 4)); // only top 4
         setLoading(false);
       })
-      .catch(error => {
-        console.error('Error loading products:', error);
+      .catch((error) => {
+        console.error("Error loading categories:", error);
         setLoading(false);
       });
   }, []);
@@ -41,7 +39,7 @@ export default function FeaturedProducts() {
     return (
       <section className="bg-custom-background">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <p className="text-center text-primary/70">Loading products...</p>
+          <p className="text-center text-primary/70">Loading collections...</p>
         </div>
       </section>
     );
@@ -50,70 +48,55 @@ export default function FeaturedProducts() {
   return (
     <section className="bg-custom-background">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="mb-8 sm:mb-12">
-          <h2 className="text-3xl sm:text-4xl font-serif text-primary mb-2">
-            Featured Collections
-          </h2>
-          <p className="text-sm sm:text-base text-primary/70 tracking-wide">
-            Explore our finest creations, handpicked for discerning tastes
-          </p>
+        {/* Header row — left title, right button */}
+        <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 sm:mb-12">
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-1 sm:mb-0">
+              Featured Collections
+            </h2>
+            <p className="text-sm sm:text-base text-primary/70 tracking-wide">
+              Explore our signature bag categories
+            </p>
+          </div>
+
+          <Button 
+            text="View All Collections" 
+            href="/products" 
+            className="mt-4 sm:mt-0"
+          />
         </div>
 
-        {/* Products Grid */}
-        <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mb-8 sm:mb-12">
-          {products.map((product, index) => (
-            <div
-              key={`${product.categoryId}-${index}`}
-              className="group relative block overflow-hidden rounded-sm border border-accent/40 bg-white hover:border-secondary-light transition-all"
-            >
-              {/* Image Container */}
-              <div className="relative h-48 sm:h-56 w-full overflow-hidden bg-custom-background">
-                <Image
-                  src={`/${product.image}`}
-                  alt={product.title}
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
-                />
-              </div>
+        {/* Category Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {categories.map((category) => {
+            const product = category.products[0];
+            if (!product) return null;
 
-              {/* Product Details */}
-              <div className="p-3 sm:p-4">
-                <h3 className="text-sm sm:text-base text-primary mb-3 line-clamp-2">
-                  {product.title}
-                </h3>
+            return (
+              <div
+                key={category.id}
+                className="group relative overflow-hidden border border-accent/30 bg-white hover:border-secondary-light transition-all"
+              >
+                <Link href={`/categories/${category.id}`}>
+                  <div className="relative h-60 w-full overflow-hidden bg-custom-background">
+                    <Image
+                      src={`/${product.image}`}
+                      alt={category.name}
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 25vw, 25vw"
+                    />
+                  </div>
 
-                <div className="space-y-1 mb-4">
-                  <p className="text-xs text-primary/70 line-clamp-1">
-                    <span className="tracking-widest uppercase font-medium">Printing:</span>{" "}
-                    <span className="text-primary/90">{product.printing}</span>
-                  </p>
-                  <p className="text-xs text-primary/70 line-clamp-1">
-                    <span className="tracking-widest uppercase font-medium">Dimensions:</span>{" "}
-                    <span className="text-primary/90">{product.dimensions} cm</span>
-                  </p>
-                </div>
-
-                <Link
-                  href="/contact"
-                  className="block w-full rounded-sm bg-primary text-white px-3 sm:px-4 py-2 text-center text-xs sm:text-sm tracking-wide transition hover:bg-secondary"
-                >
-                  Inquire Now
+                  <div className="p-1 text-left font-bold">
+                    <h3 className="text-base sm:text-lg font-medium text-primary">
+                      {category.name}
+                    </h3>
+                  </div>
                 </Link>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* CTA Button */}
-        <div className="text-center">
-          <Link
-            href="/products"
-            className="inline-block px-6 sm:px-8 py-2 sm:py-3 bg-primary text-white tracking-wide transition hover:bg-secondary rounded-sm text-sm sm:text-base"
-          >
-            View All Collections
-          </Link>
+            );
+          })}
         </div>
       </div>
     </section>

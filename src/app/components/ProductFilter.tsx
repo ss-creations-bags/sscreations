@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import Button2 from "./Button2";
 
 interface Product {
   title: string;
@@ -54,16 +55,16 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
       {/* Filter Section */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-xl font-serif text-primary mb-4">Filter by Category</h2>
+          <h2 className="text-2xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-4">Filter by Category</h2>
           <div className="flex flex-wrap gap-2">
             {filterButtons.map((button) => (
               <button
                 key={button.id}
                 onClick={() => setSelectedCategory(button.id)}
-                className={`px-4 py-2 rounded-sm text-sm tracking-wide transition-colors ${
+                className={`border px-8 py-3 text-base font-medium transition tracking-[-0.03em] ${
                   selectedCategory === button.id
-                    ? "bg-primary text-custom-background"
-                    : "bg-custom-background border border-accent/60 text-primary hover:border-secondary-light hover:text-secondary"
+                    ? "text-white bg-primary hover:bg-secondary hover:text-custom-background"
+                    : "text-primary bg-custom-background border-primary/30 hover:bg-primary hover:text-white"
                 }`}
               >
                 {button.label}
@@ -75,7 +76,7 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
         {/* Products Grid */}
         {filteredCategories.map((category) => (
           <div key={category.id} className="mb-12">
-            <h2 className="text-2xl font-serif text-primary mb-6">
+            <h2 className="text-3xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-6">
               {category.name}
             </h2>
             
@@ -83,7 +84,7 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
               {category.products.map((product, index) => (
                 <div
                   key={`${category.id}-${index}`}
-                  className="group relative block overflow-hidden rounded-sm border border-accent/40 bg-white hover:border-secondary-light transition-all"
+                  className="group relative block overflow-hidden rounded-sm border border-accent/100 bg-white hover:border-secondary-light transition-all"
                 >
                   <div className="relative h-56 w-full overflow-hidden bg-custom-background sm:h-64">
                     <Image
@@ -110,13 +111,10 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
                         <span className="text-primary/90">{product.dimensions} cm</span>
                       </p>
                     </div>
-
-                    <Link
-                      href="/contact"
-                      className="block w-full rounded-sm bg-primary px-4 py-2 text-center text-sm tracking-wide text-custom-background transition hover:bg-secondary"
-                    >
-                      Inquire Now
-                    </Link>
+                    
+                    <div className="flex justify-center mt-8">
+                      <Button2 text="Inquire Now" href="/contact" />
+                    </div>
                   </div>
                 </div>
               ))}

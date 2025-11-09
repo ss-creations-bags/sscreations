@@ -29,12 +29,6 @@
           "dimensions": "30.5*43"
         },
         {
-          "title": "Orange Bag",
-          "image": "images/bags/exampleorange(1).jpg",
-          "printing": "Rotogravure, Screen",
-          "dimensions": "30.5*44"
-        },
-        {
           "title": "Solid Grey Box Bag",
           "image": "images/bags/solidgreyboxbag.jpg",
           "printing": "Rotogravure, Screen",
@@ -211,8 +205,98 @@
       ]
     },
     {
+      "id": "nonwovenstitchedbags",
+      "name": "Non-Woven Stitched Bags",
+      "products": [
+        {
+          "title": "Shibaam Bag",
+          "image": "images/bags/shibaam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Babbi Bhai Bag",
+          "image": "images/bags/babbibhai.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "13*17*3"
+        },
+        {
+          "title": "Al Mazzam Bag",
+          "image": "images/bags/almazzam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Club 69 Bag",
+          "image": "images/bags/club69.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "12*8*3"
+        },
+        {
+          "title": "Sughanda Creations Bag",
+          "image": "images/bags/sareebag.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "38*25"
+        },
+        {
+          "title": "Indra Bhuti Bag",
+          "image": "images/bags/indra.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Fairy Land Bag",
+          "image": "images/bags/fairy.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Lehnga Bazaar Bag",
+          "image": "images/bags/lehengabag.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "38*25*7"
+        },
+        {
+          "title": "JMD Bag",
+          "image": "images/bags/jmd.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Sanskriti Bag",
+          "image": "images/bags/sanskriti.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "21*16*7"
+        },
+        {
+          "title": "Sangam Bag",
+          "image": "images/bags/sangam.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "25*18*7"
+        },
+        {
+          "title": "Silver Point Jewellers Bag",
+          "image": "images/bags/silverpointjewellers.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "10*8*3"
+        },
+        {
+          "title": "SKA Bag",
+          "image": "images/bags/ska.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "10*8*3"
+        },
+        {
+          "title": "U Royal Style Bag",
+          "image": "images/bags/u.jpg",
+          "printing": "Rotogravure, Flexographic, Screen",
+          "dimensions": "20*15*5"
+        }
+      ]
+    },
+    {
       "id": "bopplaminatedppwovenfabricboxbag",
-      "name": "BOPP Laminated PP Woven Fabric Box Bag",
+      "name": "BOPP Laminated Fabric Box Bag",
       "products": [
         {
           "title": "Super Texstyles Bag",
@@ -309,96 +393,6 @@
           "image": "images/bags/pansheelhandloom.jpg",
           "printing": "Rotogravure, Flexographic, Screen",
           "dimensions": "35.5*34"
-        }
-      ]
-    },
-    {
-      "id": "nonwovenstitchedbags",
-      "name": "Non-Woven Stitched Bags",
-      "products": [
-        {
-          "title": "Shibaam Bag",
-          "image": "images/bags/shibaam.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "21*16*7"
-        },
-        {
-          "title": "Babbi Bhai Bag",
-          "image": "images/bags/babbibhai.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "13*17*3"
-        },
-        {
-          "title": "Al Mazzam Bag",
-          "image": "images/bags/almazzam.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "21*16*7"
-        },
-        {
-          "title": "Club 69 Bag",
-          "image": "images/bags/club69.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "12*8*3"
-        },
-        {
-          "title": "Sughanda Creations Bag",
-          "image": "images/bags/sareebag.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "38*25"
-        },
-        {
-          "title": "Indra Bhuti Bag",
-          "image": "images/bags/indra.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "25*18*7"
-        },
-        {
-          "title": "Fairy Land Bag",
-          "image": "images/bags/fairy.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "25*18*7"
-        },
-        {
-          "title": "Lehnga Bazaar Bag",
-          "image": "images/bags/lehengabag.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "38*25*7"
-        },
-        {
-          "title": "JMD Bag",
-          "image": "images/bags/jmd.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "21*16*7"
-        },
-        {
-          "title": "Sanskriti Bag",
-          "image": "images/bags/sanskriti.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "21*16*7"
-        },
-        {
-          "title": "Sangam Bag",
-          "image": "images/bags/sangam.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "25*18*7"
-        },
-        {
-          "title": "Silver Point Jewellers Bag",
-          "image": "images/bags/silverpointjewellers.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "10*8*3"
-        },
-        {
-          "title": "SKA Bag",
-          "image": "images/bags/ska.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "10*8*3"
-        },
-        {
-          "title": "U Royal Style Bag",
-          "image": "images/bags/u.jpg",
-          "printing": "Rotogravure, Flexographic, Screen",
-          "dimensions": "20*15*5"
         }
       ]
     },

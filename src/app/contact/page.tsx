@@ -1,4 +1,5 @@
 import ContactForm from "../components/ContactForm";
+import Footer from "../components/Footer";
 
 export default function ContactPage() {
   return (
@@ -7,7 +8,7 @@ export default function ContactPage() {
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
           {/* Page Header */}
           <div className="mb-8">
-            <h1 className="text-3xl font-serif text-primary mb-2">
+            <h1 className="text-3xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-2">
               Let's Connect
             </h1>
             <p className="text-base text-primary/70 max-w-2xl">
@@ -130,7 +131,7 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <h2 className="text-xl font-serif text-primary mb-2">Send a Message</h2>
+              <h2 className="text-xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-2">Send a Message</h2>
               <p className="text-sm text-primary/70 mb-5">
                 Fill out the form and we'll respond within 24 hours.
               </p>
@@ -139,6 +140,7 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 }

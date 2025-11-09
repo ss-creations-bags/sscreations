@@ -40,18 +40,25 @@ export default function Header() {
             <Link href="/" className="flex items-center gap-3">
               <span className="sr-only">Home</span>
               {/* Commented out SS Creations text */}
-              {/* <span className="cormorant-500 text-4xl text-primary">
+              <div className="h-12 flex items-center">
+                <img 
+                  src="/images/logo.svg" 
+                  alt="SS Creations" 
+                  className="h-full w-full object-contain"
+                />
+              </div>
+              <span className="cormorant-500 text-4xl text-primary">
                 SS Creations
-              </span> */}
+              </span>
               
               {/* Added logo3.svg */}
-              <div className="h-12 w-48 md:h-14 md:w-56 flex items-center">
+              {/* <div className="h-12 w-48 md:h-14 md:w-56 flex items-center">
                 <img 
                   src="/logo_head.svg" 
                   alt="SS Creations" 
                   className="h-full w-full object-contain"
                 />
-              </div>
+              </div> */}
             </Link>
           </div>
 
@@ -61,7 +68,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/" 
-                  className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
+                  className="text-primary font-medium transition tracking-[-0.03em] hover:text-secondary relative group"
                 >
                   Home
                   <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-secondary transition-all group-hover:w-full"></span>
@@ -70,7 +77,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/products" 
-                  className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
+                  className="text-primary font-medium transition tracking-[-0.03em] hover:text-secondary relative group"
                 >
                   Collections
                   <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-secondary transition-all group-hover:w-full"></span>
@@ -79,7 +86,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/clients" 
-                  className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
+                  className="text-primary font-medium transition tracking-[-0.03em] hover:text-secondary relative group"
                 >
                   Clientele
                   <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-secondary transition-all group-hover:w-full"></span>
@@ -88,7 +95,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/about" 
-                  className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
+                  className="text-primary font-medium transition tracking-[-0.03em] hover:text-secondary relative group"
                 >
                   Our Story
                   <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-secondary transition-all group-hover:w-full"></span>
@@ -97,7 +104,7 @@ export default function Header() {
               <li>
                 <Link 
                   href="/contact" 
-                  className="text-primary font-medium tracking-wide transition hover:text-secondary relative group"
+                  className="text-primary font-medium transition tracking-[-0.03em] hover:text-secondary relative group"
                 >
                   Connect
                   <span className="absolute bottom-[-4px] left-0 w-0 h-[1px] bg-secondary transition-all group-hover:w-full"></span>

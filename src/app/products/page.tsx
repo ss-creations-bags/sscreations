@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { Suspense } from 'react';
 import ProductFilter from '../components/ProductFilter';
+import Footer2 from '../components/Footer2';
 
 interface Product {
   title: string;
@@ -26,7 +27,7 @@ function ProductsLoading() {
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         {/* Filter buttons loading skeleton */}
         <div className="mb-8">
-          <h2 className="text-xl font-serif text-primary mb-4">Filter by Category</h2>
+          <h2 className="text-xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-4">Filter by Category</h2>
           <div className="flex flex-wrap gap-2">
             {[...Array(8)].map((_, i) => (
               <div
@@ -64,6 +65,7 @@ export default async function ProductsPage() {
   return (
     <Suspense fallback={<ProductsLoading />}>
       <ProductFilter categories={data.categories} />
+      <Footer2 />
     </Suspense>
   );
 }

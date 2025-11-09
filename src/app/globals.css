@@ -1,38 +1,37 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Cormorant:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
-/* 
-  Use RGB values (not hex) for colors if you want Tailwind opacity modifiers 
-  like bg-custom-background/90 to work properly.
-*/
 :root {
   /* Light mode colors */
-  --background: 255 255 255;       /* #ffffff */
-  --foreground: 23 23 23;          /* #171717 */
+  --background: #ffffff;
+  --foreground: #000000;
   
-  /* High-end Indian Fashion Palette */
-  --primary: 107 31 61;            /* #6B1F3D - Burgundy */
-  --secondary: 184 134 11;         /* #B8860B - Dark Gold */
-  --secondary-light: 234 209 81;   /* #EAD151 - Light Gold */
-  --accent: 229 212 193;           /* #E5D4C1 - Beige */
-  --custom-background: 255 254 249; /* #FFFEF9 - Warm Ivory */
-  --custom-background-dark: 245 243 237; /* #F5F3ED - Warm Ivory Darkened */
+  /* Simplified palette */
+  --primary: #6B1F3D;
+  --secondary: #B8860B;
+  --secondary-light: #f5f5f5;
+  --accent: #f5f5f5;
+  --custom-background: #ffffff;
+  --custom-background-dark: #f5f5f5;
+
+  /* ✅ Base font variable */
+  --basic-font: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+                Arial, sans-serif;
 }
 
 @theme inline {
-  --color-background: rgb(var(--background));
-  --color-foreground: rgb(var(--foreground));
-  
-  /* Custom theme colors with RGB support */
-  --color-primary: rgb(var(--primary));
-  --color-secondary: rgb(var(--secondary));
-  --color-secondary-light: rgb(var(--secondary-light));
-  --color-accent: rgb(var(--accent));
-  --color-custom-background: rgb(var(--custom-background));
-  --color-custom-background-dark: rgb(var(--custom-background-dark));
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-secondary-light: var(--secondary-light);
+  --color-accent: var(--accent);
+  --color-custom-background: var(--custom-background);
+  --color-custom-background-dark: var(--custom-background-dark);
 }
 
-/* Cormorant Font Utilities */
+/* ✅ Cormorant font utilities */
 .cormorant-300, .cormorant-400, .cormorant-500,
 .cormorant-600, .cormorant-700 {
   font-family: "Cormorant", serif;
@@ -45,15 +44,17 @@
 .cormorant-600 { font-weight: 600; }
 .cormorant-700 { font-weight: 700; }
 
+/* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: 10 10 10;  /* #0a0a0a */
-    --foreground: 237 237 237; /* #ededed */
+    --background: #000000;
+    --foreground: #ffffff;
   }
 }
 
+/* ✅ Global body font */
 body {
-  background-color: rgb(var(--background));
-  color: rgb(var(--foreground));
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--basic-font);
 }
