@@ -96,14 +96,14 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="px-4 py-2 bg-custom-background/10 border border-custom-background/30 text-custom-background placeholder-custom-background/60 rounded-sm focus:outline-none focus:border-secondary-light w-full sm:min-w-[280px]"
+                  className="px-4 py-2 bg-custom-background/10 border border-custom-background/30 text-custom-background placeholder-custom-background/60 focus:outline-none focus:border-secondary-light w-full sm:min-w-[280px]"
                   required
                   disabled={isSubmitting || isSubscribed}
                 />
                 <button
                   type="submit"
                   disabled={isSubmitting || isSubscribed}
-                  className="px-6 py-2 bg-custom-background text-primary font-medium tracking-wide transition hover:bg-[#f5f3ed] hover:text-primary/95 rounded-sm whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="px-6 py-2 bg-custom-background text-primary font-medium tracking-wide transition hover:bg-[#f5f3ed] hover:text-primary/95 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   {isSubscribed ? "Subscribed!" : isSubmitting ? "Subscribing..." : "Subscribe"}
                 </button>

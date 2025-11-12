@@ -8,9 +8,9 @@ interface ButtonProps {
   className?: string;
 }
 
-export default function Button({ text, href, onClick, className = "" }: ButtonProps) {
+export default function Button4({ text, href, onClick, className = "" }: ButtonProps) {
   const baseStyles =
-    "border border-white px-8 py-3 text-base font-medium text-white " +
+    "border border-white px-4 py-2 sm:px-8 sm:py-3 text-sm sm:text-base font-medium text-white " +
     "hover:bg-secondary-light hover:text-primary transition-colors duration-300 tracking-[-0.03em]";
 
   if (href) {

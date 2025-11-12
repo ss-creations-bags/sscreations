@@ -10,7 +10,7 @@ interface ButtonProps {
 
 export default function Button({ text, href, onClick, className = "" }: ButtonProps) {
   const baseStyles =
-    "border border-primary px-8 py-3 text-base font-medium text-primary " +
+    "border border-primary px-4 py-2 sm:px-8 sm:py-3 text-sm sm:text-base font-medium text-primary " +
     "hover:bg-primary hover:text-white transition tracking-[-0.03em]";
 
   if (href) {

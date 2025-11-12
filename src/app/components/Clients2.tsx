@@ -54,28 +54,28 @@ export default function ClientsPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/* Header */}
-          <div className="text-center pt-12 sm:pt-16 pb-8">
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-4">
+          <div className="text-center pt-4 pb-4">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-primary cormorant-500 tracking-[-0.03em] sm:mb-4 sm:mt-4">
               Our Clients
             </h2>
-            <div className="flex items-center justify-center">
+            {/* <div className="flex items-center justify-center">
               <span className="text-6xl text-primary font-bold leading-none">✳</span>
-            </div>
+            </div> */}
           </div>
 
           {/* Image + Text Section */}
-          <div className="bg-[#f5f5f5] overflow-hidden flex flex-col md:flex-row items-center justify-center shadow-sm mb-8">
-            {/* Left Side - Image */}
-            <div className="w-full md:w-1/2 h-72 sm:h-96 md:h-[500px] lg:h-[600px] relative">
-              <Image
-                src="/images/client3.png"
-                alt="Our valued clients and collaborations"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-            </div>
+          <div className="bg-[#f5f5f5] overflow-hidden flex flex-col md:flex-row items-stretch shadow-sm mb-8">
+                              {/* Left Side - Image */}
+                              <div className="w-full md:w-1/2 relative min-h-72 sm:min-h-96 md:min-h-0">
+                                  <Image
+                                      src="/images/client.jpeg"
+                                      alt="SS Creations Clients"
+                                      fill
+                                      className="object-cover"
+                                      sizes="(max-width: 768px) 100vw, 50vw"
+                                      priority
+                                  />
+                              </div>
 
             {/* Right Side - Text */}
             <div className="w-full md:w-1/2 px-8 sm:px-12 py-12 flex flex-col items-center text-center justify-center">

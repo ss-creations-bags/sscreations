@@ -38,8 +38,8 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
   const filterButtons = [
     { id: "all", label: "All Products" },
     { id: "nonwovencommonbags", label: "Non-Woven Bags" },
-    { id: "bopplaminatedppwovenfabricboxbag", label: "BOPP Laminated" },
     { id: "nonwovenstitchedbags", label: "Non-Woven Stitched Bags" },
+    { id: "bopplaminatedppwovenfabricboxbag", label: "BOPP Laminated" },
     { id: "boppbag", label: "BOPP Bags" },
     { id: "zippouch", label: "Zip Pouches" },
     { id: "ziplockbags", label: "Zip Lock Bags" },
@@ -55,13 +55,13 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
       {/* Filter Section */}
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-4">Filter by Category</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-4">Filter by Category</h2>
           <div className="flex flex-wrap gap-2">
             {filterButtons.map((button) => (
               <button
                 key={button.id}
                 onClick={() => setSelectedCategory(button.id)}
-                className={`border px-8 py-3 text-base font-medium transition tracking-[-0.03em] ${
+                className={`border px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium transition tracking-[-0.03em] whitespace-nowrap ${
                   selectedCategory === button.id
                     ? "text-white bg-primary hover:bg-secondary hover:text-custom-background"
                     : "text-primary bg-custom-background border-primary/30 hover:bg-primary hover:text-white"
@@ -76,7 +76,7 @@ export default function ProductFilter({ categories }: ProductFilterProps) {
         {/* Products Grid */}
         {filteredCategories.map((category) => (
           <div key={category.id} className="mb-12">
-            <h2 className="text-3xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-6">
+            <h2 className="text-2xl sm:text-3xl font-bold text-primary cormorant-500 tracking-[-0.03em] mb-6">
               {category.name}
             </h2>
             

@@ -34,31 +34,26 @@ export default function Header() {
       className="fixed top-0 w-full z-50 bg-custom-background border-b border-accent/30 shadow-md"
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-20 items-center justify-between">
-          {/* Logo Section */}
+        <div className="flex h-20 md:h-20 items-center justify-between">
+          {/* Logo Section - Optimized for mobile */}
           <div className="flex-1">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-2 md:gap-3">
               <span className="sr-only">Home</span>
-              {/* Commented out SS Creations text */}
-              <div className="h-12 flex items-center">
+              {/* Logo optimized for mobile */}
+              <div className="h-8 w-8 md:h-12 md:w-12 flex items-center flex-shrink-0">
                 <img 
                   src="/images/logo.svg" 
                   alt="SS Creations" 
                   className="h-full w-full object-contain"
                 />
               </div>
-              <span className="cormorant-500 text-4xl text-primary">
-                SS Creations
-              </span>
               
-              {/* Added logo3.svg */}
-              {/* <div className="h-12 w-48 md:h-14 md:w-56 flex items-center">
-                <img 
-                  src="/logo_head.svg" 
-                  alt="SS Creations" 
-                  className="h-full w-full object-contain"
-                />
-              </div> */}
+              {/* Company name with responsive sizing */}
+              <div className="flex flex-col">
+                <span className="cormorant-500 text-2xl md:text-4xl text-primary leading-tight">
+                  SS Creations
+                </span>
+              </div>
             </Link>
           </div>
 
@@ -116,7 +111,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button 
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2 text-primary transition hover:text-secondary"
+            className="md:hidden p-2 text-primary transition hover:text-secondary flex-shrink-0"
             aria-label="Toggle menu"
           >
             {isMobileMenuOpen ? (

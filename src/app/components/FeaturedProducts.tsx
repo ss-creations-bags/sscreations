@@ -78,7 +78,7 @@ export default function FeaturedProducts() {
                 className="group relative overflow-hidden border border-accent/30 bg-white hover:border-secondary-light transition-all"
               >
                 <Link href={`/categories/${category.id}`}>
-                  <div className="relative h-60 w-full overflow-hidden bg-custom-background">
+                  <div className="relative h-48 sm:h-60 w-full overflow-hidden bg-custom-background">
                     <Image
                       src={`/${product.image}`}
                       alt={category.name}
