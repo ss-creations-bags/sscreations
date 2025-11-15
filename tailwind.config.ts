@@ -6,10 +6,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#6B1F3D',
-        secondary: '#B8860B', 
-        background: '#FFFEF9',
-        accent: '#E5D4C1',
+        // These will work with your CSS custom properties
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        'secondary-light': 'var(--secondary-light)',
+        accent: 'var(--accent)',
+        'custom-background': 'var(--custom-background)',
+        'custom-background-dark': 'var(--custom-background-dark)',
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+      },
+      fontFamily: {
+        sans: ['Open Sans', 'system-ui', 'sans-serif'],
+        serif: ['Cormorant', 'serif'],
       },
     },
   },

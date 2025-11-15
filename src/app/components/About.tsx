@@ -35,7 +35,7 @@ export default function AboutUs() {
                             <h3 className="text-2xl sm:text-3xl font-bold text-primary cormorant-500 tracking-[-0.02em] mb-6">
                                 Who We Are
                             </h3>
-                            <p className="text-base sm:text-lgtext-gray-700 leading-relaxed max-w-2xl">
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
                                 SS Creations, established in 2011, offers a versatile selection of bags,
                                 including Non-Woven, BOPP, and Jute bags. Our commitment to quality products
                                 and competitive pricing sets us apart in the market.
@@ -47,7 +47,7 @@ export default function AboutUs() {
                             <h3 className="text-2xl sm:text-3xl font-bold text-primary cormorant-500 tracking-[-0.02em] mb-6">
                                 Our Mission
                             </h3>
-                            <p className="text-base sm:text-lgtext-gray-700 leading-relaxed max-w-2xl">
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
                                 To excel in providing superior bag solutions that cater to businesses
                                 and retailers alike.
                             </p>
@@ -58,7 +58,7 @@ export default function AboutUs() {
                             <h3 className="text-2xl sm:text-3xl font-bold text-primary cormorant-500 tracking-[-0.02em] mb-6">
                                 Why Choose Us
                             </h3>
-                            <p className="text-base sm:text-lgtext-gray-700 leading-relaxed max-w-2xl">
+                            <p className="text-base sm:text-lg text-gray-700 leading-relaxed max-w-2xl">
                                 We prioritize customer satisfaction and efficiency, ensuring that your
                                 packaging needs are met with our diverse product range and exceptional service.
                             </p>

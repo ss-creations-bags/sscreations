@@ -21,7 +21,11 @@ export default function Title() {
 
           {/* Optional divider icon */}
           <div className="my-6 flex items-center justify-center">
-            <span className="text-4xl sm:text-6xl text-primary font-bold leading-none">✳</span>
+            {/* <span className="text-4xl sm:text-6xl text-primary font-bold leading-none">✳</span> */}
+            {/* <svg className="w-12 h-12 text-primary" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L15 9L22 9L16 14L18 21L12 17L6 21L8 14L2 9L9 9Z" />
+            </svg> */}
+            <span className="text-4xl sm:text-6xl font-bold text-primary leading-none">✳︎</span>
           </div>
 
           {/* Shop Now Button */}

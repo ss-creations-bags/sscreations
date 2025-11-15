@@ -20,7 +20,7 @@
                 Arial, sans-serif;
 }
 
-@theme inline {
+@theme {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-primary: var(--primary);
@@ -29,12 +29,16 @@
   --color-accent: var(--accent);
   --color-custom-background: var(--custom-background);
   --color-custom-background-dark: var(--custom-background-dark);
+  
+  /* Font families */
+  --font-sans: var(--basic-font);
+  --font-serif: "Cormorant", serif;
 }
 
 /* ✅ Cormorant font utilities */
 .cormorant-300, .cormorant-400, .cormorant-500,
 .cormorant-600, .cormorant-700 {
-  font-family: "Cormorant", serif;
+  font-family: var(--font-serif);
   font-optical-sizing: auto;
 }
 
@@ -47,8 +51,8 @@
 /* Dark mode colors */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #000000;
-    --foreground: #ffffff;
+    --background: #ffffff;
+    --foreground: #000000;
   }
 }
 
@@ -57,4 +61,12 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--basic-font);
+}
+
+.bg-primary {
+  background-color: #6B1F3D !important;
+}
+
+.text-custom-background {
+  color: #FFFFFF !important;
 }
